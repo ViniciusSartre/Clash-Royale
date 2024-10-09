@@ -1,0 +1,118 @@
+/* Corpo da página minimalista */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Cor de fundo clara e neutra */
+  color: #333;
+}
+
+/* Estilo do cabeçalho com logo à esquerda e texto centralizado */
+header {
+  background-color: #005cbf;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 3px solid #ffcc00;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+  position: relative;
+}
+
+/* Logo à esquerda */
+.logo {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  left: 20px; /* Distância da esquerda */
+}
+
+/* Centraliza o título sem afetar a logo */
+header h1 {
+  flex-grow: 1;
+}
+
+/* Cabeçalho limpo com cor de destaque */
+header {
+  background-color: #005cbf; /* Azul suave */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 3px solid #ffcc00; /* Sutil toque dourado */
+}
+
+/* Botões de navegação minimalistas */
+nav button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff; /* Azul claro */
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #0056b3; /* Mudança sutil de cor no hover */
+}
+
+/* Seção com fundo claro e sem sombras */
+.section {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+  border: 1px solid #ddd; /* Linha fina para separar a seção */
+}
+
+.section.active {
+  display: block;
+}
+
+/* Estilo limpo para os gráficos */
+canvas {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* Estilo minimalista para as informações dos jogadores */
+.jogador {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.jogador h3 {
+  color: #333;
+  font-size: 18px;
+}
+
+.jogador h3::before {
+  content: '🏆'; /* Emoji de troféu */
+  margin-right: 8px;
+}
+
+.batalha {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+/* Ícones simples e discretos */
+.jogador h3::before {
+  content: url('https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/ClashRoyaleTrophy.png/30px-ClashRoyaleTrophy.png'); /* Ícone de troféu minimalista */
+  margin-right: 8px;
+}
